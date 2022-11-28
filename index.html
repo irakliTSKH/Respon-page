@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RespPage</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/c1d0a3a7bd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+            <!--Navbar-->
+
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="nav-links mobile-menu"> 
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tours</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">About</a></li>
+                <li class="btn"><botton>Contact</botton></li>
+        </ul>
+        <img src="./img/img/menu-btn.png" alt="" class="menu-btn">
+    </nav> 
+            <!--  header  -->
+    <header>
+        <div class="header-content">
+            <h2>Explore The Colorful World</h2>
+            <div class="line"></div>
+            <h1>WONDERFUL GIFT</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- info -->
+    <div class="title-info">
+        <h2>Camping & Hiking</h2>
+    </div>
+    <section class="info">
+        <div class="left-info">
+           <div class="tour">
+            <h2>Kazbegi</h2>
+            <p>Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. 
+                Asperiores, Lorem ipsum dolor
+                 sit amet consectetur adipisicing 
+                 elit. Temporibus, consectetur!</p>
+           </div>
+           <div class="tour">
+            <h2>Svaneti</h2>
+            <p>Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. 
+                Asperiores, Lorem ipsum dolor
+                 sit amet consectetur adipisicing 
+                 elit. Temporibus, consectetur!</p>
+           </div>
+           <div class="tour">
+            <h2>Bakhmaro</h2>
+            <p>Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. 
+                Asperiores, Lorem ipsum dolor
+                 sit amet consectetur adipisicing 
+                 elit. Temporibus, consectetur!</p>
+           </div>
+        </div>
+        <div class="right-info">
+            <img src="./img/img/img3.jpg" alt="">
+            <img src="./img/img/img4.jpg" alt="">
+            <img src="./img/img/img5.jpg" alt="">
+            <img src="./img/img/img6.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer> 
+       <div class="footer-box">
+            <ul class="list1">
+                <h2>About</h2>
+                <li><a href="">Product</a></li>
+                <li><a href="">Benefits</a></li>
+                <li><a href="">Partners</a></li>
+                <li><a href="">Team</a></li>
+            </ul>
+            <ul class="list2">
+                <h2>Abouet</h2>
+                <li><a href="">Support</a></li>
+                <li><a href="">Legal Terms</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </div>
+
+        <!-- social -->
+        
+        <div class="social">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.querySelector ('.menu-btn')
+        const navlinks = document.querySelector ('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle ('mobile-menu')
+        })
+    </script> 
+</body>
+</html>
