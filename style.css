@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scada&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +7,7 @@
 }
 body {
     overflow-x: hidden;
+    font-family: 'Scada', sans-serif;;
 }
 a {
     text-decoration: none;
@@ -119,10 +121,37 @@ header {
 
 
 .title-info {
-    margin: 50px auto;
+    margin: 20px auto;
     text-align: center;
-    border: 3px solid black;
+    border: 3px solid rgb(179, 176, 176);
 }
+.title-info-tex {
+    color:rgb(179, 176, 176);
+    font-size: 30px;
+}
+
+/* gallery */
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    
+    
+}
+.gallery img {
+    margin: 20px;
+    width: 10%;
+    height: 100px;
+    cursor: pointer;
+}
+.gallery img:hover {
+    border: 3px solid rgb(179, 176, 176);
+}
+
+
+
 .info {
     display: flex;
     width: 100%;
@@ -130,10 +159,10 @@ header {
     background: linear-gradient(to top,
     rgba(67, 66, 77, 0.7), 
     rgb(255, 255, 255));
+    justify-content: center;
     
 }
-.left-info {
-    
+.left-info { 
     width: 40%; 
     text-align: center;
     
@@ -148,13 +177,16 @@ header {
    
 }
 .tour {
-    margin-top: 50px;
+    margin: 50px;
     padding: 10px 7px;
     height: 30%;
     width: 90%;
     cursor: pointer;
     overflow: hidden;
-    color: rgb(58, 55, 55);
+}
+.tour:hover {
+    background-color: rgb(108, 102, 146);
+    border-radius: 30px;
 }
 .right-info img {
     cursor: pointer;
@@ -164,20 +196,21 @@ header {
 
 .right-info img:hover {
     opacity: 1;
+    border: 2px solid rgb(179, 176, 176);
 }
  /* Footer */
 
 .footer-box {
     background-color:rgba(67, 66, 77, 0.7);
     display: flex;
-    justify-content: center;
+    justify-content:space-evenly;
     
 
 }
 .list1 , .list2 {
     line-height: 1.5;
     color: rgb(255, 255, 255);
-    margin: 100px;
+    margin: 80px 0;
 }
 .social {
     margin: 30px; 
@@ -231,14 +264,26 @@ li a:hover {
     .info {
         display: flex;
         flex-direction: column;
+        
+        
 }
     .left-info {
-        width: 90%;
+       width: 90%;
+       display: flex;
+       flex-direction: column;
+       align-items: center; 
     }
     .right-info {
         width: 100%;
     }
-
+    .gallery
+    {
+       display: flex;
+       flex-wrap: wrap;
+    }
+    .gallery img {
+        height: 60%;
+    }
 }
 
 
